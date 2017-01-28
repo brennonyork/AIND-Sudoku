@@ -11,12 +11,21 @@ A:
 > only those two numbers can exist in those two cells, agnostic of what those
 > cells' individual values are. The identification of these two values in these
 > two cells *constrains* the larger sudoku problem and allows the solver to
-> *propagate* these constrains so as to minimize the problem landscape (eg
+> *propagate* these constraints so as to minimize the problem landscape (eg
 > the sudoku board).
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A:
+
+> The diagonal sudoku problem is a further constraint on the generalized sudoku
+> problem in such that both diagonals must also only contain only the values one
+> through nine. We use constraint propagation to solve this by further extending
+> the core methods ('elimination' and 'only choice') to incorporate the diagonals.
+> Ensuring the rule of diagonals also suffices adds new units to the `unitlist`
+> and thus new *constraints* that one can *propagate* to further minimize the
+> overall set of choices the 'elimination' and 'only choice' methods have available
+> when solving the larger sudoku problem.
 
 ### Install
 

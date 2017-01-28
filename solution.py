@@ -174,7 +174,7 @@ def solve(grid):
     Returns:
         The dictionary representation of the final sudoku grid. False if no solution exists.
     """
-    return search(reduce_puzzle(only_choice(eliminate(grid_values(grid)))))
+    return search(grid_values(grid))
     
 
 if __name__ == '__main__':

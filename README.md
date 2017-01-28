@@ -3,7 +3,16 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A:
+
+> We use constraint propagation to solve the naked twins problem by identifying
+> multiple cells within a given unit that only contain two possible values. If
+> two separate cells contain the same two numbers then it can be reasoned that
+> only those two numbers can exist in those two cells, agnostic of what those
+> cells' individual values are. The identification of these two values in these
+> two cells *constrains* the larger sudoku problem and allows the solver to
+> *propagate* these constrains so as to minimize the problem landscape (eg
+> the sudoku board).
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
